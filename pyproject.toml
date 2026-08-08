@@ -1,0 +1,27 @@
+[project]
+name = "borg"
+version = "0.1"
+requires-python = ">=3.14"
+dependencies = [
+  "smoothpy",
+  "aiohttp",
+  "msgpack",
+  "duckdb",
+  "pandas",
+  "torch",
+  "jsonata-python",
+  "dateparser",
+]
+
+[tool.uv.sources]
+smoothpy = {
+    git = "https://github.com/mefistofelix/smoothpy"
+}
+torch = [
+    { index = "pytorch", marker = "platform_system == 'Windows'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
