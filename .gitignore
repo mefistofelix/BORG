@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 chrome_udd/
 uv.exe
+uv.lock
 tdjson.dll
 borg/BAK/telegram.js
 doc/lib/telegram.js
